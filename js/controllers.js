@@ -3,8 +3,11 @@
 /* Controllers */
 
 angular.module('bobikoApp.controllers', [])
-  .controller('MyCtrl1', ['$scope', function($scope) {
-
+  .controller('FileCtrl', ['$scope', function($scope) {
+    console.log($scope);
+    $scope.showContent = function($fileContent){
+        $scope.content = $fileContent;
+    };
   }])
   .controller('MyCtrl2', ['$scope', function($scope) {
 
